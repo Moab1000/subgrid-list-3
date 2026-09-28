@@ -21,7 +21,7 @@ function showDetails(detail) {
   document.querySelector("img").alt = detail.productdisplayname;
   document.querySelector(".model").textContent = detail.productdisplayname;
   document.querySelector(".color").textContent = detail.basecolour;
-  document.querySelector(".description").textContent = detail.description;
+  document.querySelector(".description").innerHTML = detail.description;
   document.querySelector(".name").textContent = detail.productdisplayname;
   document.querySelector(".brand").textContent = `${detail.brandname} - ${detail.category}`;
   document.querySelector(".price").textContent = `${detail.price} kr`;
